@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>MSI GK-701 Driver</title>
+    <pkg-ref id="com.msi.GK701HIDDevice"/>
+    <options customize="never" require-scripts="false" rootVolumeOnly="true"/>
+    <welcome file="Welcome.rtf"/>
+    <volume-check>
+        <allowed-os-versions>
+            <os-version min="10.13"/>
+        </allowed-os-versions>
+    </volume-check>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.msi.GK701HIDDevice"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.msi.GK701HIDDevice" visible="false">
+        <pkg-ref id="com.msi.GK701HIDDevice" auth="Root" onConclusion="RequireRestart"/>
+    </choice>
+    <pkg-ref id="com.msi.GK701HIDDevice" auth="Root" onConclusion="RequireRestart">GK701HIDDeviceDriver.pkg</pkg-ref>
+</installer-gui-script>
