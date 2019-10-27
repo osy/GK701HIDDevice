@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+#
+# postinstall perl script
+#
+
+use strict;
+
+# force rebuild cache
+system("touch /System/Library/Extensions");
+system("kextcache -invalidate /");
+
+# done
