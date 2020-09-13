@@ -7,17 +7,18 @@ Long story short, the "fix" is to send SET_IDLE with argument of 0 to put the ke
 ## Building (macOS 10.14)
 
 1. You must install Xcode 10.3 because later versions break compatibility with 10.14.
-2. Build with `./package/build.sh`
-3. Install the generated .pkg
+2. Reboot into Recovery OS and run `csrutil enable --without kext`
+3. Build with `./package/build.sh`
+4. Install the generated .pkg
 
 ## Building (macOS 10.15+)
 
-The DriverKit driver requires [entitlements from Apple][1]. If you have a developer account and can sign with these entitlements, please open an issue and attach the signed artifacts so everyone else can use it.
+The DriverKit driver requires [entitlements from Apple][1]. If you have a developer account and can sign with these entitlements, please open an issue and attach the signed artifacts so everyone else can use it. Otherwise, we need to [disable SIP][2] and AMFI to use the driver. This applies to both Intel and Apple Silicon.
 
-To use the DEXT without an Apple developer certificate, you can [disable SIP][2] and add the boot-arg `amfi_get_out_of_my_way=1`. Alternatively, if you do not wish to completely disable your system's security, you can install [AMFIExemption][3].
-
-Once you have either a properly signed build or an AMFI bypass, you can build & run GK701Installer from Xcode and press 'Install' to install the driver.
+1. Reboot into Recovery OS and run `csrutil enable --without kext` and `nvram boot-args="$(nvram boot-args) amfi_get_out_of_my_way=1"`
+2. Build GK701Installer with Xcode (or `xcodebuild -project GK701HIDDevice.xcodeproj -target GK701Installer`)
+3. Copy GK701Installer.app to `/Applications` and launch it.
+4. Press "Install"
 
 [1]: https://developer.apple.com/documentation/driverkit/requesting_entitlements_for_driverkit_development
 [2]: https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection
-[3]: https://github.com/osy86/AMFIExemption

@@ -483,7 +483,7 @@
 					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
-				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements";
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements --team-identifier OSY86";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
 				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
@@ -500,7 +500,7 @@
 					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
 				);
 				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
-				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements";
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements --team-identifier OSY86";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
 				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
@@ -522,7 +522,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements";
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements --team-identifier OSY86";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701Installer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -547,7 +547,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements";
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements --team-identifier OSY86";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701Installer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
