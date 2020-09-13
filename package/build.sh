@@ -4,7 +4,7 @@ TMP="/tmp"
 CURDIR="$(dirname "$0")"
 OUTPKG="${CURDIR}/GK701HIDDevice.pkg"
 PROJECT="${CURDIR}/../GK701HIDDevice.xcodeproj"
-SCHEME="GK701HIDDevice"
+SCHEME="GK701HIDDeviceKext"
 TMP_ACHIVE="${TMP}/build.xcarchive"
 
 if [[ ! -x /usr/bin/xcodebuild ]]; then

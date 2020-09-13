@@ -14,21 +14,17 @@
 // limitations under the License.
 //
 
-#include "GK701HIDDevice.h"
+#ifndef GK701HIDDevice_h
+#define GK701HIDDevice_h
 
-kern_return_t
-IMPL(GK701HIDDevice, Start)
+#include <Availability.h>
+#include <HIDDriverKit/IOUserUSBHostHIDDevice.iig>
+
+class GK701HIDDevice: public IOUserUSBHostHIDDevice
 {
-    kern_return_t ret;
-    if ((ret = Start(provider, SUPERDISPATCH)) != kIOReturnSuccess) {
-        Stop(provider, SUPERDISPATCH);
-        return ret;
-    }
-    
-    os_log(OS_LOG_DEFAULT, "Patching idle time for MSI GK-701.");
-    
-    // Fix for stupid keyboard issue
-    setIdle(0);
-    
-    return ret;
-}
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* GK701HIDDevice_h */

@@ -7,23 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE53D82F232A075800D1657B /* GK701Retainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE53D82D232A075800D1657B /* GK701Retainer.cpp */; };
-		CE53D830232A075800D1657B /* GK701Retainer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE53D82E232A075800D1657B /* GK701Retainer.hpp */; };
-		CEDE2A8E2114D69800AA3FD8 /* GK701HIDDevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEDE2A8D2114D69800AA3FD8 /* GK701HIDDevice.hpp */; };
-		CEDE2A902114D69800AA3FD8 /* GK701HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDE2A8F2114D69800AA3FD8 /* GK701HIDDevice.cpp */; };
+		CE32895224EA242400CFF40E /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32895124EA242400CFF40E /* DriverKit.framework */; };
+		CE32895524EA242400CFF40E /* GK701HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE32895424EA242400CFF40E /* GK701HIDDevice.cpp */; };
+		CE32895724EA242400CFF40E /* GK701HIDDevice.iig in Sources */ = {isa = PBXBuildFile; fileRef = CE32895624EA242400CFF40E /* GK701HIDDevice.iig */; };
+		CE32896024EA26D000CFF40E /* HIDDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32895F24EA26D000CFF40E /* HIDDriverKit.framework */; };
+		CE41C5C9250D90DF00A1C220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C5C8250D90DF00A1C220 /* AppDelegate.swift */; };
+		CE41C5CB250D90DF00A1C220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C5CA250D90DF00A1C220 /* ContentView.swift */; };
+		CE41C5CD250D90E100A1C220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41C5CC250D90E100A1C220 /* Assets.xcassets */; };
+		CE41C5D0250D90E100A1C220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41C5CF250D90E100A1C220 /* Preview Assets.xcassets */; };
+		CE41C5D3250D90E100A1C220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41C5D1250D90E100A1C220 /* Main.storyboard */; };
+		CE41C5D9250D916700A1C220 /* com.osy86.GK701HIDDevice.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = CE32894E24EA242400CFF40E /* com.osy86.GK701HIDDevice.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE41C5DE250D92F400A1C220 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C5DD250D92F400A1C220 /* Installer.swift */; };
+		CE41C611250D9D3100A1C220 /* GK701HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41C60F250D9D3100A1C220 /* GK701HIDDevice.cpp */; };
+		CE41C612250D9D3100A1C220 /* GK701HIDDevice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE41C610250D9D3100A1C220 /* GK701HIDDevice.hpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE41C5DA250D916700A1C220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE32894524EA242400CFF40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE32894D24EA242400CFF40E;
+			remoteInfo = GK701HIDDevice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE41C5DC250D916700A1C220 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				CE41C5D9250D916700A1C220 /* com.osy86.GK701HIDDevice.dext in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		CE53D82D232A075800D1657B /* GK701Retainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GK701Retainer.cpp; sourceTree = "<group>"; };
-		CE53D82E232A075800D1657B /* GK701Retainer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GK701Retainer.hpp; sourceTree = "<group>"; };
-		CEDE2A8A2114D69800AA3FD8 /* GK701HIDDevice.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GK701HIDDevice.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEDE2A8D2114D69800AA3FD8 /* GK701HIDDevice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GK701HIDDevice.hpp; sourceTree = "<group>"; };
-		CEDE2A8F2114D69800AA3FD8 /* GK701HIDDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GK701HIDDevice.cpp; sourceTree = "<group>"; };
-		CEDE2A912114D69800AA3FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE32894E24EA242400CFF40E /* com.osy86.GK701HIDDevice.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = com.osy86.GK701HIDDevice.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE32895124EA242400CFF40E /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE32895424EA242400CFF40E /* GK701HIDDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GK701HIDDevice.cpp; sourceTree = "<group>"; };
+		CE32895624EA242400CFF40E /* GK701HIDDevice.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = GK701HIDDevice.iig; sourceTree = "<group>"; };
+		CE32895824EA242400CFF40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE32895924EA242400CFF40E /* GK701HIDDevice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GK701HIDDevice.entitlements; sourceTree = "<group>"; };
+		CE32895F24EA26D000CFF40E /* HIDDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HIDDriverKit.framework; path = System/DriverKit/System/Library/Frameworks/HIDDriverKit.framework; sourceTree = SDKROOT; };
+		CE41C5C6250D90DF00A1C220 /* GK701Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GK701Installer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE41C5C8250D90DF00A1C220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE41C5CA250D90DF00A1C220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE41C5CC250D90E100A1C220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE41C5CF250D90E100A1C220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE41C5D2250D90E100A1C220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE41C5D4250D90E100A1C220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE41C5D5250D90E100A1C220 /* GK701Installer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GK701Installer.entitlements; sourceTree = "<group>"; };
+		CE41C5DD250D92F400A1C220 /* Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installer.swift; sourceTree = "<group>"; };
+		CE41C605250D9CEA00A1C220 /* GK701HIDDevice.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GK701HIDDevice.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE41C60B250D9CEA00A1C220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE41C60F250D9D3100A1C220 /* GK701HIDDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GK701HIDDevice.cpp; sourceTree = "<group>"; };
+		CE41C610250D9D3100A1C220 /* GK701HIDDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GK701HIDDevice.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEDE2A872114D69800AA3FD8 /* Frameworks */ = {
+		CE32894B24EA242400CFF40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE32895224EA242400CFF40E /* DriverKit.framework in Frameworks */,
+				CE32896024EA26D000CFF40E /* HIDDriverKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C5C3250D90DF00A1C220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C602250D9CEA00A1C220 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,57 +96,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CEDE2A802114D69700AA3FD8 = {
+		CE32894424EA242400CFF40E = {
 			isa = PBXGroup;
 			children = (
-				CEDE2A8C2114D69800AA3FD8 /* GK701HIDDevice */,
-				CEDE2A8B2114D69800AA3FD8 /* Products */,
+				CE32895324EA242400CFF40E /* GK701HIDDevice */,
+				CE41C606250D9CEA00A1C220 /* GK701HIDDeviceKext */,
+				CE41C5C7250D90DF00A1C220 /* GK701Installer */,
+				CE32895024EA242400CFF40E /* Frameworks */,
+				CE32894F24EA242400CFF40E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CEDE2A8B2114D69800AA3FD8 /* Products */ = {
+		CE32894F24EA242400CFF40E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE2A8A2114D69800AA3FD8 /* GK701HIDDevice.kext */,
+				CE32894E24EA242400CFF40E /* com.osy86.GK701HIDDevice.dext */,
+				CE41C5C6250D90DF00A1C220 /* GK701Installer.app */,
+				CE41C605250D9CEA00A1C220 /* GK701HIDDevice.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEDE2A8C2114D69800AA3FD8 /* GK701HIDDevice */ = {
+		CE32895024EA242400CFF40E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE53D82D232A075800D1657B /* GK701Retainer.cpp */,
-				CE53D82E232A075800D1657B /* GK701Retainer.hpp */,
-				CEDE2A8D2114D69800AA3FD8 /* GK701HIDDevice.hpp */,
-				CEDE2A8F2114D69800AA3FD8 /* GK701HIDDevice.cpp */,
-				CEDE2A912114D69800AA3FD8 /* Info.plist */,
+				CE32895F24EA26D000CFF40E /* HIDDriverKit.framework */,
+				CE32895124EA242400CFF40E /* DriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE32895324EA242400CFF40E /* GK701HIDDevice */ = {
+			isa = PBXGroup;
+			children = (
+				CE32895424EA242400CFF40E /* GK701HIDDevice.cpp */,
+				CE32895624EA242400CFF40E /* GK701HIDDevice.iig */,
+				CE32895824EA242400CFF40E /* Info.plist */,
+				CE32895924EA242400CFF40E /* GK701HIDDevice.entitlements */,
 			);
 			path = GK701HIDDevice;
+			sourceTree = "<group>";
+		};
+		CE41C5C7250D90DF00A1C220 /* GK701Installer */ = {
+			isa = PBXGroup;
+			children = (
+				CE41C5C8250D90DF00A1C220 /* AppDelegate.swift */,
+				CE41C5CA250D90DF00A1C220 /* ContentView.swift */,
+				CE41C5DD250D92F400A1C220 /* Installer.swift */,
+				CE41C5CC250D90E100A1C220 /* Assets.xcassets */,
+				CE41C5D1250D90E100A1C220 /* Main.storyboard */,
+				CE41C5D4250D90E100A1C220 /* Info.plist */,
+				CE41C5D5250D90E100A1C220 /* GK701Installer.entitlements */,
+				CE41C5CE250D90E100A1C220 /* Preview Content */,
+			);
+			path = GK701Installer;
+			sourceTree = "<group>";
+		};
+		CE41C5CE250D90E100A1C220 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE41C5CF250D90E100A1C220 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE41C606250D9CEA00A1C220 /* GK701HIDDeviceKext */ = {
+			isa = PBXGroup;
+			children = (
+				CE41C60F250D9D3100A1C220 /* GK701HIDDevice.cpp */,
+				CE41C610250D9D3100A1C220 /* GK701HIDDevice.hpp */,
+				CE41C60B250D9CEA00A1C220 /* Info.plist */,
+			);
+			path = GK701HIDDeviceKext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CEDE2A852114D69800AA3FD8 /* Headers */ = {
+		CE32894924EA242400CFF40E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDE2A8E2114D69800AA3FD8 /* GK701HIDDevice.hpp in Headers */,
-				CE53D830232A075800D1657B /* GK701Retainer.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C600250D9CEA00A1C220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41C612250D9D3100A1C220 /* GK701HIDDevice.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CEDE2A892114D69800AA3FD8 /* GK701HIDDevice */ = {
+		CE32894D24EA242400CFF40E /* GK701HIDDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEDE2A942114D69800AA3FD8 /* Build configuration list for PBXNativeTarget "GK701HIDDevice" */;
+			buildConfigurationList = CE32895C24EA242400CFF40E /* Build configuration list for PBXNativeTarget "GK701HIDDevice" */;
 			buildPhases = (
-				CEDE2A852114D69800AA3FD8 /* Headers */,
-				CEDE2A862114D69800AA3FD8 /* Sources */,
-				CEDE2A872114D69800AA3FD8 /* Frameworks */,
-				CEDE2A882114D69800AA3FD8 /* Resources */,
+				CE32894924EA242400CFF40E /* Headers */,
+				CE32894A24EA242400CFF40E /* Sources */,
+				CE32894B24EA242400CFF40E /* Frameworks */,
+				CE32894C24EA242400CFF40E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -91,42 +206,106 @@
 			);
 			name = GK701HIDDevice;
 			productName = GK701HIDDevice;
-			productReference = CEDE2A8A2114D69800AA3FD8 /* GK701HIDDevice.kext */;
+			productReference = CE32894E24EA242400CFF40E /* com.osy86.GK701HIDDevice.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+		CE41C5C5250D90DF00A1C220 /* GK701Installer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE41C5D6250D90E100A1C220 /* Build configuration list for PBXNativeTarget "GK701Installer" */;
+			buildPhases = (
+				CE41C5C2250D90DF00A1C220 /* Sources */,
+				CE41C5C3250D90DF00A1C220 /* Frameworks */,
+				CE41C5C4250D90DF00A1C220 /* Resources */,
+				CE41C5DC250D916700A1C220 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE41C5DB250D916700A1C220 /* PBXTargetDependency */,
+			);
+			name = GK701Installer;
+			productName = GK701Installer;
+			productReference = CE41C5C6250D90DF00A1C220 /* GK701Installer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE41C604250D9CEA00A1C220 /* GK701HIDDeviceKext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE41C60C250D9CEA00A1C220 /* Build configuration list for PBXNativeTarget "GK701HIDDeviceKext" */;
+			buildPhases = (
+				CE41C600250D9CEA00A1C220 /* Headers */,
+				CE41C601250D9CEA00A1C220 /* Sources */,
+				CE41C602250D9CEA00A1C220 /* Frameworks */,
+				CE41C603250D9CEA00A1C220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GK701HIDDeviceKext;
+			productName = GK701HIDDeviceKext;
+			productReference = CE41C605250D9CEA00A1C220 /* GK701HIDDevice.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CEDE2A812114D69700AA3FD8 /* Project object */ = {
+		CE32894524EA242400CFF40E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = Test;
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = osy86;
 				TargetAttributes = {
-					CEDE2A892114D69800AA3FD8 = {
-						CreatedOnToolsVersion = 10.0;
+					CE32894D24EA242400CFF40E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					CE41C5C5250D90DF00A1C220 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					CE41C604250D9CEA00A1C220 = {
+						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
-			buildConfigurationList = CEDE2A842114D69700AA3FD8 /* Build configuration list for PBXProject "GK701HIDDevice" */;
+			buildConfigurationList = CE32894824EA242400CFF40E /* Build configuration list for PBXProject "GK701HIDDevice" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = CEDE2A802114D69700AA3FD8;
-			productRefGroup = CEDE2A8B2114D69800AA3FD8 /* Products */;
+			mainGroup = CE32894424EA242400CFF40E;
+			productRefGroup = CE32894F24EA242400CFF40E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEDE2A892114D69800AA3FD8 /* GK701HIDDevice */,
+				CE32894D24EA242400CFF40E /* GK701HIDDevice */,
+				CE41C604250D9CEA00A1C220 /* GK701HIDDeviceKext */,
+				CE41C5C5250D90DF00A1C220 /* GK701Installer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CEDE2A882114D69800AA3FD8 /* Resources */ = {
+		CE32894C24EA242400CFF40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C5C4250D90DF00A1C220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41C5D3250D90E100A1C220 /* Main.storyboard in Resources */,
+				CE41C5D0250D90E100A1C220 /* Preview Assets.xcassets in Resources */,
+				CE41C5CD250D90E100A1C220 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C603250D9CEA00A1C220 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,25 +315,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CEDE2A862114D69800AA3FD8 /* Sources */ = {
+		CE32894A24EA242400CFF40E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE53D82F232A075800D1657B /* GK701Retainer.cpp in Sources */,
-				CEDE2A902114D69800AA3FD8 /* GK701HIDDevice.cpp in Sources */,
+				CE32895724EA242400CFF40E /* GK701HIDDevice.iig in Sources */,
+				CE32895524EA242400CFF40E /* GK701HIDDevice.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C5C2250D90DF00A1C220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41C5DE250D92F400A1C220 /* Installer.swift in Sources */,
+				CE41C5CB250D90DF00A1C220 /* ContentView.swift in Sources */,
+				CE41C5C9250D90DF00A1C220 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE41C601250D9CEA00A1C220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41C611250D9D3100A1C220 /* GK701HIDDevice.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE41C5DB250D916700A1C220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE32894D24EA242400CFF40E /* GK701HIDDevice */;
+			targetProxy = CE41C5DA250D916700A1C220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE41C5D1250D90E100A1C220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE41C5D2250D90E100A1C220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		CEDE2A922114D69800AA3FD8 /* Debug */ = {
+		CE32895A24EA242400CFF40E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -180,9 +396,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -199,21 +415,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = driverkit;
 			};
 			name = Debug;
 		};
-		CEDE2A932114D69800AA3FD8 /* Release */ = {
+		CE32895B24EA242400CFF40E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -239,9 +454,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -252,43 +467,126 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = driverkit;
 			};
 			name = Release;
 		};
-		CEDE2A952114D69800AA3FD8 /* Debug */ = {
+		CE32895D24EA242400CFF40E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE32895E24EA242400CFF40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701HIDDevice/GK701HIDDevice.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CE41C5D7250D90E100A1C220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"GK701Installer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GK701Installer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701Installer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE41C5D8250D90E100A1C220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"GK701Installer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GK701Installer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CODE_SIGN_FLAGS = "--entitlement $(SRCROOT)/GK701Installer/GK701Installer.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701Installer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE41C60D250D9CEA00A1C220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
-				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_FILE = GK701HIDDeviceKext/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULE_NAME = com.osy86.GK701HIDDevice;
 				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msi.GK701HIDDevice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
+				PRODUCT_NAME = GK701HIDDevice;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
 		};
-		CEDE2A962114D69800AA3FD8 /* Release */ = {
+		CE41C60E250D9CEA00A1C220 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = GK701HIDDevice/Info.plist;
-				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_FILE = GK701HIDDeviceKext/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULE_NAME = com.osy86.GK701HIDDevice;
 				MODULE_VERSION = 1.0.0d1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msi.GK701HIDDevice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osy86.GK701HIDDevice;
+				PRODUCT_NAME = GK701HIDDevice;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -296,25 +594,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEDE2A842114D69700AA3FD8 /* Build configuration list for PBXProject "GK701HIDDevice" */ = {
+		CE32894824EA242400CFF40E /* Build configuration list for PBXProject "GK701HIDDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEDE2A922114D69800AA3FD8 /* Debug */,
-				CEDE2A932114D69800AA3FD8 /* Release */,
+				CE32895A24EA242400CFF40E /* Debug */,
+				CE32895B24EA242400CFF40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEDE2A942114D69800AA3FD8 /* Build configuration list for PBXNativeTarget "GK701HIDDevice" */ = {
+		CE32895C24EA242400CFF40E /* Build configuration list for PBXNativeTarget "GK701HIDDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEDE2A952114D69800AA3FD8 /* Debug */,
-				CEDE2A962114D69800AA3FD8 /* Release */,
+				CE32895D24EA242400CFF40E /* Debug */,
+				CE32895E24EA242400CFF40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE41C5D6250D90E100A1C220 /* Build configuration list for PBXNativeTarget "GK701Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE41C5D7250D90E100A1C220 /* Debug */,
+				CE41C5D8250D90E100A1C220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE41C60C250D9CEA00A1C220 /* Build configuration list for PBXNativeTarget "GK701HIDDeviceKext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE41C60D250D9CEA00A1C220 /* Debug */,
+				CE41C60E250D9CEA00A1C220 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CEDE2A812114D69700AA3FD8 /* Project object */;
+	rootObject = CE32894524EA242400CFF40E /* Project object */;
 }
