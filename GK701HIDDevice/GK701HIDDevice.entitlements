@@ -17,16 +17,6 @@
 			<integer>29954</integer>
 			<key>idVendor</key>
 			<integer>3141</integer>
-			<key>bConfigurationValue</key>
-			<integer>1</integer>
-			<key>bInterfaceNumber</key>
-			<integer>0</integer>
-			<key>bInterfaceClass</key>
-			<integer>3</integer>
-			<key>bInterfaceSubClass</key>
-			<integer>1</integer>
-			<key>bInterfaceProtocol</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>com.apple.security.app-sandbox</key>

@@ -13,7 +13,7 @@ Long story short, the "fix" is to send SET_IDLE with argument of 0 to put the ke
 
 ## Building (macOS 10.15+)
 
-The DriverKit driver requires [entitlements from Apple][1]. If you have a developer account and can sign with these entitlements, please open an issue and attach the signed artifacts so everyone else can use it. Otherwise, we need to [disable SIP][2] and AMFI to use the driver. This applies to both Intel and Apple Silicon.
+The DriverKit driver requires [entitlements from Apple][1]. You can use the pre-built installer in the releases for a signed and notarized version (no need to disable SIP). Otherwise, we need to [disable SIP][2] and AMFI to use the driver. This applies to both Intel and Apple Silicon.
 
 1. Reboot into Recovery OS and run `csrutil enable --without kext` and `nvram boot-args="$(nvram boot-args) amfi_get_out_of_my_way=1"`
 2. Build GK701Installer with Xcode (or `xcodebuild -project GK701HIDDevice.xcodeproj -target GK701Installer`)
